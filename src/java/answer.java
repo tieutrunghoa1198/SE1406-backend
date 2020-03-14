@@ -21,6 +21,7 @@ public class answer extends HttpServlet {
     //POST METHOD
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+
         PrintWriter out = res.getWriter();
         StringBuffer sb = new StringBuffer();
         String line = null;
@@ -36,8 +37,14 @@ public class answer extends HttpServlet {
 //        String s = "{\"name\":\"sonoo\",\"salary\":600000.0,\"age\":27}";
         Object obj = JSONValue.parse(sb.toString());
         JSONObject jsonObject = (JSONObject) obj;
+        System.out.println(jsonObject + " ----- line 1 ");
         String quest = (String) jsonObject.get("question");
-        out.print(quest);
+        System.out.println(quest + " ----- line 2 ");
+        if (quest.equalsIgnoreCase("Thế nào ?")) {
+
+            System.out.println("Success" + " ----- line 3 ");
+        }
+        out.print(quest + " ----- line 4 ");
         answer(quest);
     }
 
