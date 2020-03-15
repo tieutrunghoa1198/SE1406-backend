@@ -7,6 +7,12 @@ import org.json.simple.*;
 public class answer extends HttpServlet {
 
     private String answer(String question) {
+       String[] quest = 
+       { "Tôi muốn biết phương thức tuyển sinh của đại học fpt ?",
+           "Bạn có thể giải thích rõ hơn về điều kiện miễn thi sơ tuyển của Trường đại học FPT không ?",
+           "Bạn có thể giải thích rõ hơn về kỳ thi sơ tuyển của Trường đại học FPT không ?",
+           "tôi hiểu rồi cám ơn bạn .",
+       }; 
         String answer = null;
         return answer;
     }
