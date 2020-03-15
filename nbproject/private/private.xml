@@ -5,7 +5,6 @@
         <group>
             <file>file:/F:/For%20Development%20Purpose/Java/api_voicebot/web/WEB-INF/web.xml</file>
             <file>file:/F:/For%20Development%20Purpose/Java/api_voicebot/src/java/answer.java</file>
-            <file>file:/F:/For%20Development%20Purpose/Java/api_voicebot/src/java/CharsetFilter.java</file>
             <file>file:/F:/For%20Development%20Purpose/Java/api_voicebot/src/java/CORSFilter.java</file>
         </group>
     </open-files>
